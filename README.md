@@ -2,7 +2,7 @@
 
 Wiser Maven Repository
 
-## Como adicionar um repositorio a nosso repositorio do maven 
+## Como adicionar um projeto  a este repositorio 
 
 A primeira coisa a se fazer é incluir isso no pom do seu projeto
 
