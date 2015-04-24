@@ -53,7 +53,7 @@ escolhendo qual versão você deseja ou seja **SNAPSHOT** ou **RELEASES**
 ```xml
 <repositories>
     <repository>
-        <id>wiser-snapshots</id>
+        <id>wiser-releases</id>
         <url>https://github.com/WiserUFBA/wiser-mvn-repo/raw/master/releases</url>
     </repository>
 </repositories>
