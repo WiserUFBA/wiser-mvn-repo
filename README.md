@@ -9,7 +9,7 @@ A primeira coisa a se fazer é incluir isso no pom do seu projeto
 ```xml
 <distributionManagement>
     <repository>
-        <id>repo</id>
+        <id>release-repo</id>
         <url>https://github.com/WiserUFBA/wiser-mvn-repo/raw/master/releases</url>
     </repository>
     <snapshotRepository>
