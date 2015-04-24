@@ -26,7 +26,7 @@ Feito isso utilize este comando no terminal para fazer o deploy local substituin
 a `<url>` com a pasta local do clone deste repositorio, é importante que você tenha
 clonado este repositório em seu computador.
 
-`mvn -DaltDeploymentRepository=<reponame>::default::<url> deploy`
+`mvn -DaltDeploymentRepository=<reponame>::default::file:<url> deploy`
 
 Como as modificações foram feitas localmente, você irá precisar dar commit e push
 consequentemente para que as modificações sejam submetidas.
