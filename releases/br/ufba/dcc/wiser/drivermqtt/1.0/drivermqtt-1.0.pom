@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+    <!-- Especificações do projeto -->
+    <modelVersion>4.0.0</modelVersion>
+    <name>Driver-MQTT</name>
+    <groupId>br.ufba.dcc.wiser</groupId>
+    <artifactId>drivermqtt</artifactId>
+    <version>1.0</version>
+  
+    <!-- Build specifications -->
+    
+    <build>
+        <sourceDirectory>
+            ${project.basedir}/src/br
+        </sourceDirectory>
+    </build>
+    
+    <!-- Dependency -->
+    <dependencies>
+        <dependency>
+            <groupId>mqtt-client</groupId>
+            <artifactId>mqtt-client</artifactId>
+            <version>1.7</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/mqtt-client-1.7-uber.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20141113</version>
+        </dependency>
+    </dependencies>
+    
+    <!-- Distribution specifications -->
+    
+    <distributionManagement>
+        <repository>
+            <id>release-repo</id>
+            <url>https://github.com/WiserUFBA/wiser-mvn-repo/raw/master/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshot-repo</id>
+            <url>https://github.com/WiserUFBA/wiser-mvn-repo/raw/master/snapshots</url>
+        </snapshotRepository>
+</distributionManagement>
+</project>
