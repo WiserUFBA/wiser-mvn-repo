@@ -59,9 +59,11 @@ escolhendo qual versão você deseja ou seja **SNAPSHOT** ou **RELEASES**
 </repositories>
 ```
 
-### DriverMQTT `<dependency>`
+### Pacotes Disponiveis
 
-#### V-1.0
+#### DriverMQTT
+
+##### V-1.0
 
 ```xml
 <dependency>
