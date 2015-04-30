@@ -128,6 +128,15 @@ algo assim:
 ...
 ```
 
+Agora basta compilar normalmente o serviço. Após compilado deverão estar dois
+pacotes na pasta um com e outro sem as dependências. Por algum motivo o pacote
+sem as dependências está com o arquivo MANIFEST.mf dentro da pasta MANIFEST-INF
+errado por essa razão utilizando algum editor de arquivos compactados você deve
+abrir o jar sem as dependências, copiar o MANIFEST dele e colar dentro do jar
+com as dependências, caso não faça isso não irá conseguir enviar o pacote com 
+as dependências para o ServiceMix já que o mesmo irá acusar pacote com MANIFEST
+danificado (ou algo assim).
+
 --
 <p align="center">
 	Developed by </br>
