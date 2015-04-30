@@ -83,6 +83,51 @@ escolhendo qual versão você deseja ou seja **SNAPSHOT** ou **RELEASES**
 </dependency>
 ```
 
+## Observações sobre compilação de bundles
+
+Para compilar os bundles é preciso fazer duas coisas que são incluir este plugin
+ao POM do seu projeto que será o responsavel por empacotar todas as dependências
+num mesmo jar que irá ter a seguinte forma {nome}-jar-with-dependencies.jar (ou
+algo próximo disso):
+
+```xml
+<plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>2.2.1</version>
+        <configuration>
+        <descriptorRefs>
+            <descriptorRef>jar-with-dependencies</descriptorRef>
+        </descriptorRefs>
+    </configuration>
+    <executions>
+        <execution>
+            <id>make-assembly</id> 
+            <phase>package</phase>
+            <goals>
+                <goal>single</goal>
+            </goals>
+        </execution>
+    </executions>
+</plugin>
+
+```
+
+Após esse passo concluido temos que ir nas nossas dependências e falar que todas
+as dependências já presentes no ServiceMix não precisam ser empacotadas. Para isso adicione está linha `<scope>provided</scope>` a estas dependências lembrando
+é claro que você deve excluir os Drivers deste processo já que eles precisam ter
+suas dependências dentro do pacote. A forma final de cada dependência deve ser 
+algo assim:
+
+```xml
+...
+<dependency>
+    <groupId>org.apache.servicemix.specs</groupId>
+    <artifactId>org.apache.servicemix.specs.jsr339-api-2.0</artifactId>
+    <scope>provided</scope>
+</dependency>
+...
+```
+
 --
 <p align="center">
 	Developed by </br>
