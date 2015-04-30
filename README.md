@@ -59,6 +59,20 @@ escolhendo qual versão você deseja ou seja **SNAPSHOT** ou **RELEASES**
 </repositories>
 ```
 
+### Pacotes Disponiveis
+
+#### DriverMQTT
+
+##### V-1.0
+
+```xml
+<dependency>
+    <groupId>br.ufba.dcc.wiser</groupId>
+    <artifactId>drivermqtt</artifactId>
+    <version>1.0</version>
+</dependency>
+```
+
 --
 <p align="center">
 	Developed by </br>
