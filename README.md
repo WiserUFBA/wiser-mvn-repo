@@ -73,6 +73,16 @@ escolhendo qual versão você deseja ou seja **SNAPSHOT** ou **RELEASES**
 </dependency>
 ```
 
+##### V-1.1
+
+```xml
+<dependency>
+    <groupId>br.ufba.dcc.wiser</groupId>
+    <artifactId>drivermqtt</artifactId>
+    <version>1.1</version>
+</dependency>
+```
+
 --
 <p align="center">
 	Developed by </br>
