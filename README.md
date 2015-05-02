@@ -83,6 +83,16 @@ escolhendo qual versão você deseja ou seja **SNAPSHOT** ou **RELEASES**
 </dependency>
 ```
 
+##### V-1.2
+
+```xml
+<dependency>
+    <groupId>br.ufba.dcc.wiser</groupId>
+    <artifactId>drivermqtt</artifactId>
+    <version>1.2</version>
+</dependency>
+```
+
 ## Observações sobre compilação de bundles
 
 Para compilar os bundles é preciso fazer duas coisas que são incluir este plugin
