@@ -93,6 +93,60 @@ escolhendo qual versão você deseja ou seja **SNAPSHOT** ou **RELEASES**
 </dependency>
 ```
 
+## Plugins interessantes
+
+Versões "release" devem estar acompanhadas de JAVADOC e SRC para facilitar a vida 
+de quem for utilizar algum dos pacotes aqui disponiveis, para isso você deve incluir
+este plugin ao pom do seu projeto.
+
+```xml
+<build>
+	...
+    <plugins>
+    	...
+        <plugin>
+            <artifactId>maven-source-plugin</artifactId>
+            <version>2.4</version>
+            <executions>
+                <execution>
+                    <id>attach-sources</id>
+                    <phase>deploy</phase>
+                    <goals><goal>jar-no-fork</goal></goals> 
+                </execution>
+            </executions>
+        </plugin>
+        <plugin> 
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <version>2.10.3</version> 
+            <executions> 
+                <execution> 
+                    <id>attach-javadocs</id>
+                    <phase>deploy</phase>
+                    <goals><goal>jar</goal></goals> 
+                </execution> 
+            </executions> 
+        </plugin>
+        <plugin> 
+            <!-- explicitly define maven-deploy-plugin after other to force exec order -->
+            <artifactId>maven-deploy-plugin</artifactId>
+            <version>2.8.2</version>
+            <executions> 
+                <execution> 
+                    <id>deploy</id>
+                    <phase>deploy</phase>
+                    <goals><goal>deploy</goal></goals> 
+                </execution> 
+            </executions> 
+        </plugin>
+    	...
+    </plugins>
+    ...
+</build>
+```
+
+Com estes plugins você poderá dar um deploy completo da aplicação, o que é obrigatório
+para versões "release".
+
 ## Observações sobre compilação de bundles
 
 Para compilar os bundles é preciso fazer duas coisas que são incluir este plugin
