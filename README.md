@@ -102,9 +102,9 @@ algo próximo disso):
 
 ```xml
 <plugin>
-        <artifactId>maven-assembly-plugin</artifactId>
-        <version>2.2.1</version>
-        <configuration>
+    <artifactId>maven-assembly-plugin</artifactId>
+    <version>2.2.1</version>
+    <configuration>
         <descriptorRefs>
             <descriptorRef>jar-with-dependencies</descriptorRef>
         </descriptorRefs>
