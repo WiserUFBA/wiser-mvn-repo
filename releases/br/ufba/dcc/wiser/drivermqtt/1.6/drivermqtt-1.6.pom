@@ -4,7 +4,7 @@
     <name>DriverMQTT-OSGi</name>
     <description> Driver MQTT for web services application using the TATU TPI protocol </description>
     <groupId>br.ufba.dcc.wiser</groupId>
-    <artifactId>drivermqtt-osgi</artifactId>
+    <artifactId>drivermqtt</artifactId>
     <version>1.6</version>
     <packaging>bundle</packaging>
     
