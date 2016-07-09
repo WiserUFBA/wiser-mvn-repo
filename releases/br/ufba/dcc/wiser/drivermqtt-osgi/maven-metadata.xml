@@ -3,7 +3,7 @@
   <groupId>br.ufba.dcc.wiser</groupId>
   <artifactId>drivermqtt-osgi</artifactId>
   <versioning>
-    <release>2.1.4</release>
+    <release>3.0.0</release>
     <versions>
       <version>1.5</version>
       <version>1.6</version>
@@ -13,7 +13,8 @@
       <version>2.0.2</version>
       <version>2.1.2</version>
       <version>2.1.4</version>
+      <version>3.0.0</version>
     </versions>
-    <lastUpdated>20151113222401</lastUpdated>
+    <lastUpdated>20160709233009</lastUpdated>
   </versioning>
 </metadata>
