@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+		
+	<name>jena-gateway</name>
+	<groupId>org.apache.jena</groupId>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>jena-osgi-feature</artifactId>
+    <version>3.1.0</version>
+    <packaging>pom</packaging>
+
+
+    <build>
+        <plugins>
+
+            <plugin>
+                <groupId>org.apache.karaf.tooling</groupId>
+                <artifactId>karaf-maven-plugin</artifactId>
+                <version>3.0.0</version>
+                <executions>
+                    <execution>
+                        <id>features-create-kar</id>
+                        <goals>
+                            <goal>features-create-kar</goal>
+                        </goals>
+                        <configuration>
+                            <featuresFile>src/main/resources/feature.xml</featuresFile>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+	<distributionManagement>
+    <repository>
+        <id>release-repo</id>
+        <url>https://github.com/WiserUFBA/wiser-mvn-repo/raw/master/releases</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshot-repo</id>
+        <url>https://github.com/WiserUFBA/wiser-mvn-repo/raw/master/snapshots</url>
+    </snapshotRepository>
+</distributionManagement>
+    
+</project>
