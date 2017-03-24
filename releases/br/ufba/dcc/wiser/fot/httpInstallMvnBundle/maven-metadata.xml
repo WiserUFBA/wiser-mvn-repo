@@ -3,10 +3,11 @@
   <groupId>br.ufba.dcc.wiser.fot</groupId>
   <artifactId>httpInstallMvnBundle</artifactId>
   <versioning>
-    <release>1.0</release>
+    <release>1.0.5</release>
     <versions>
       <version>1.0</version>
+      <version>1.0.5</version>
     </versions>
-    <lastUpdated>20170324124859</lastUpdated>
+    <lastUpdated>20170324151639</lastUpdated>
   </versioning>
 </metadata>
