@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>br.ufba.dcc.wiser</groupId>
+  <artifactId>soft-iot-vertx-mqtt-broker</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20181008182722</lastUpdated>
+  </versioning>
+</metadata>
